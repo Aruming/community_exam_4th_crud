@@ -3,6 +3,7 @@ package com.ll.exam.article.repository;
 import com.ll.exam.annotation.Autowired;
 import com.ll.exam.annotation.Repository;
 import com.ll.exam.article.dto.ArticleDto;
+import com.ll.exam.article.service.ArticleService;
 import com.ll.exam.mymap.MyMap;
 import com.ll.exam.mymap.SecSql;
 
@@ -20,5 +21,13 @@ public class ArticleRepository {
                 .append("FROM article")
                 .append("ORDER BY id DESC");
         return sql.selectRows(ArticleDto.class);
+    }
+
+    public ArticleDto getArticleById(int id) {
+        SecSql sql = myMap.genSecSql();
+        sql.append("SELECT * FROM article WHERE id = ?", id);
+        ArticleDto articleDto = sql.selectRow(ArticleDto.class);
+
+        return articleDto;
     }
 }
