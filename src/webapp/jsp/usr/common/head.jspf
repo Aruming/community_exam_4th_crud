@@ -15,6 +15,9 @@
     <!-- 폰트어썸 불러오기 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 
+    <!-- 데이지UI 불러오기 -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
+
     <!-- 테일윈드 불러오기 -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -37,14 +40,18 @@
 
 <header>
     <div class="container py-3 px-3 mx-auto flex">
-        <a href="/usr/article/list/free" class="mr-auto">로고</a>
+        <a href="/usr/article/list" class="mr-auto">( •̀ ω •́ )✧ 개발자 김아름</a>
 
         <ul class="flex gap-3">
             <li>
-                <a class="hover:underline hover:text-[red]" href="/usr/article/write/free">자유게시물 작성</a>
+                <a class="hover:underline hover:text-[red]" href="/usr/article/list">
+                    <i class="fa-solid fa-rectangle-list"></i> 목록
+                </a>
             </li>
             <li>
-                <a class="hover:underline hover:text-[red]" href="/usr/article/list/free">자유게시물 리스트</a>
+                <a class="hover:underline hover:text-[red]" href="/usr/article/write">
+                    <i class="fa-solid fa-pen"></i> 작성
+                </a>
             </li>
         </ul>
     </div>

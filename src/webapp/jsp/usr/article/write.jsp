@@ -40,7 +40,7 @@
 
             <div class="mt-3">
                 <div class="btns">
-                    <input class="btn btn-primary btn-outline" type="submit" value="작성" />
+                    <input class="btn btn-outline btn-info" type="submit" value="작성" />
                 </div>
             </div>
         </form>
