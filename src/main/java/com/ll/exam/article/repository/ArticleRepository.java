@@ -30,4 +30,13 @@ public class ArticleRepository {
 
         return articleDto;
     }
+
+    public long getArticlesCount() {
+        SecSql sql = myMap.genSecSql();
+        sql.append("SELECT COUNT(*) FROM article");
+
+        Long count = sql.selectLong();
+
+        return count;
+    }
 }
